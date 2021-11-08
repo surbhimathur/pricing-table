@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+
+*{
+  font-family: 'PT Sans', sans-serif;
+  overflow-x:hidden;
+}
+section{
+  max-width:1400px;
+  border:1px solid black;
+  margin:30px auto;
+  background-color:rgb(41, 94, 241);
+}
+.table_container{
+  border:1px solid red;
+  margin:20px auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+
+}
+.pricing_table{
+  
+  width:320px;
+  background-color:white;
+  border-radius:10px;
+  padding:5px;
+ margin-bottom:40px;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.plan_name{
+  text-align:center;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:2px;
+  color:rgb(163, 158, 158);
+  
+}
+.price{
+  font-size:50px;
+  text-align:center;
+  font-weight:600;
+  margin:0;
+}
+span{
+  font-size:12px;
+}
+.features{
+  border:1px solid grey;
+  margin-top:15px;
+  
+}
+.list{
+  line-height:2.5;
+}
+.list li{
+  font-size:18px;
+  list-style:none;
+  color:rgb(54, 54, 54);
+}
+i{
+  margin-right:10px;
+  font-size:14px;
+}
+button{
+  width:280px;
+  border-radius:25px;
+  padding:15px;
+  background-color:rgb(93, 153, 241);
+  border:none;
+  color:white;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:600;
+  margin:0px 20px 10px 20px;
+}
+button:hover{
+  background-color:rgb(18, 108, 243);
+  cursor:pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(min-width:1000px)
+{
+  .table_container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    margin:20px 10px;
+  
+  }
+  .pricing_table{
+   margin-bottom:0px;
+   width:30%;
+   
+  }
+  button{
+    width:280px;
+    margin:0px 12px 10px 12px;
+  }
+  
+}
+
+@media(min-width:1200px)
+{
+  .pricing_table{
+    width:360px;
+  }
+  button{
+    width:100%;
+    margin:auto;
+  }
+  .table_container{
+    margin:20px 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width:1300px)
+{
+  .pricing_table{
+    width:380px;
   }
-  to {
-    transform: rotate(360deg);
+ 
+  .table_container{
+    margin:20px 40px;
   }
 }
