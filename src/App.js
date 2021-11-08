@@ -1,5 +1,7 @@
 import './App.css';
 
+import {FaCheck} from "react-icons/fa";
+
 function App() {
   const details= 
   [
@@ -51,14 +53,14 @@ function PricingTable({plan_name,price,features,features_unavailable}) {
          <div className="features">
         
           <ul className="list">
-          <li><i class="fas fa-check"></i>{features[0]}</li>
-          <li><i class="fas fa-check"></i>{features[1]}</li>
-          <li><i class="fas fa-check"></i>{features[2]}</li>
-          <li><i class="fas fa-check"></i>{features[3]}</li>
-          <li style={styles}><i class="fas fa-check"></i>{features_unavailable[0]}{features[4]}</li>
-          <li style={styles}><i class="fas fa-check"></i>{features_unavailable[1]}{features[5]}</li>
-          <li style={styles}><i class="fas fa-check"></i>{features_unavailable[2]}{features[6]}</li>
-          <li style={styles}><i class="fas fa-check"></i>{features_unavailable[3]}{features[7]}</li>
+          <li><FaCheck class="icon" />{features[0]}</li>
+          <li><FaCheck class="icon" />{features[1]}</li>
+          <li><FaCheck class="icon" />{features[2]}</li>
+          <li><FaCheck class="icon" />{features[3]}</li>
+          <li style={styles}><FaCheck class="icon" />{features_unavailable[0]}{features[4]}</li>
+          <li style={styles}><FaCheck class="icon" />{features_unavailable[1]}{features[5]}</li>
+          <li style={styles}><FaCheck class="icon" />{features_unavailable[2]}{features[6]}</li>
+          <li style={styles}><FaCheck class="icon" />{features_unavailable[3]}{features[7]}</li>
           </ul>
          <button>Button</button>
          </div>
